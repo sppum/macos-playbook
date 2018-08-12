@@ -15,3 +15,6 @@
 
 - name: Copy git aliases
   template: src=templates/aliases/git.sh dest=~/.zsh/aliases/git.sh
+
+- name: Ensure vim tmp directory
+  file: path=~/.vim/tmp state=directory

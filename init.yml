@@ -1,26 +1,25 @@
 ---
 - hosts: all
   vars:
-    user_email: luis.munoz.hdez@gmail.com
-    user_name: Luis Hdez
-    docker_hub_user: luishdez
-    github_user: luishdez
-    date_timezone: Europe/Madrid
-    project_sources_path: /Volumes/work-data/sources/
-    cask_packages: [soundflower, soundflowerbed]
+    user_email: cmking@gmail.com
+    user_name: Chris King
+    docker_hub_user: mupps
+    github_user: sppum
+    date_timezone: Europe/London
+    project_sources_path: /Users/chris/sources/
+    #cask_packages: [soundflower, soundflowerbed]
   roles:
-    - role: elliotweiser.osx-command-line-tools
+          #    - role: elliotweiser.osx-command-line-tools
     - role: ansible-macos.homebrew
     - role: ansible-macos.settings
     - role: developer-common
     - role: developer-terminal
-    - role: developer-devops
-    - role: developer-php
+      #    - role: developer-devops
     - role: developer-nodejs
     - role: developer-web
-    - role: developer-devops
-    - role: developer-datascience
-    - role: developer-atom
-    - role: developer-nginx
+      #    - role: developer-devops
+      #    - role: developer-datascience
+      #    - role: developer-atom
+      #    - role: developer-nginx
     - role: developer-nvim
     - role: ansible-macos.packages

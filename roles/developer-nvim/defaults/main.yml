@@ -4,5 +4,5 @@ default_pip_packages:
 default_brew_packages:
   - neovim/neovim/neovim
   - python3
-  - rust
-  - homebrew/completions/cargo-completion
+    #- rust
+    #  - homebrew/completions/cargo-completion
